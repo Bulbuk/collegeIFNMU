@@ -1,0 +1,146 @@
+body{
+    margin: 0 0;
+    padding: 0 0;
+}
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+}
+.wrapper{
+    width: 1200px;
+    margin: 80px auto;
+    background: #fff;
+}
+.nav{
+    width: 100%;
+    background: #822C2B;
+    height: 60px;
+    display: grid;
+    grid-template-columns: auto 150px;
+    grid-gap: 40px;
+    justify-content: end;
+    align-items: center;
+    a{
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        &:nth-child(2){
+            color: lightgrey;
+        }
+        &:nth-child(1){
+            &:hover{
+                color: lightgrey;
+                transition: 0.5s; 
+            }
+        }
+    }
+}
+.eduHub{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 66px;
+    
+}
+footer{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 100px;
+}
+.eduHub_block{
+    background: #822C2B;
+    height: 200px;
+    overflow: hidden;
+    transition: 0.7s;
+    box-shadow: 10px 15px 20px grey;
+    &:hover{
+        height: 350px;
+        transition: 0.7s;
+    }
+    
+}
+.eduHub_block_banner{
+    background-image: url(../img/block1.jpg);
+    height: 200px;
+    background-repeat: no-repeat;
+   // background: #822C2B;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 22px;
+    p{
+        color: #822C2B;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+.eduHub_block_banner_krok{
+    background-image: url(../img/block1.jpg);
+    height: 200px;
+    background-repeat: no-repeat;
+    background: #06045c;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 22px;
+    p{
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+.eduHub_info{
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    justify-content: center;
+    
+    p{
+        color: white;
+        text-align: center;
+        
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-decoration: none;
+        button{
+            width: 80%;
+            height: 50px;
+            border: 5px solid white;
+            border-radius: 10px;
+            background:#822C2B ;
+            color: white;
+            text-decoration: none;
+            transition: 0.5s;
+            &:hover{
+                background: white;
+                color: #822C2B;
+                transition: 0.5s;
+                
+            }
+        }
+    }
+}
+.footer_nav{
+    display: grid;
+    grid-template-columns: repeat(2, 110px);
+    grid-gap: 20px;
+}
+.footer_info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 28px;
+    }
+}

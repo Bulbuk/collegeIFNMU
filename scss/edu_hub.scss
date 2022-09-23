@@ -17,22 +17,41 @@ body{
     background: #822C2B;
     height: 60px;
     display: grid;
-    grid-template-columns: auto 150px;
-    grid-gap: 40px;
+    grid-template-columns: repeat(3, auto);
     justify-content: end;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 40;
     a{
         color: white;
+        background: #822C2B;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-decoration: none;
+        padding: 0 20px;
         font-size: 30px;
         font-family: 'Roboto', sans-serif;
-        &:nth-child(2){
-            color: lightgrey;
+        &:nth-child(3){
+            background: white;
+            color: #822C2B;
+            padding: 0 20px;
         }
         &:nth-child(1){
+                color: lightgrey;
+                background: white;
+                color: #822C2B;
+                transition: 0.3s;  
+        } 
+        &:nth-child(2){
             &:hover{
                 color: lightgrey;
-                transition: 0.5s; 
+                background: white;
+                color: #822C2B;
+                transition: 0.3s; 
             }
         }
     }
@@ -42,6 +61,8 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 66px;
+    grid-row-gap: 200px;
+    
     
 }
 footer{
@@ -51,6 +72,7 @@ footer{
 }
 .eduHub_block{
     background: #822C2B;
+
     height: 200px;
     overflow: hidden;
     transition: 0.7s;
@@ -58,6 +80,7 @@ footer{
     &:hover{
         height: 350px;
         transition: 0.7s;
+        margin-top: -150px;
     }
     
 }
@@ -129,16 +152,28 @@ footer{
         }
     }
 }
+footer{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 100px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+    justify-content: center;
+    background: #822C2B;
+}
 .footer_nav{
     display: grid;
     grid-template-columns: repeat(2, 110px);
     grid-gap: 20px;
+    
 }
 .footer_info{
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    color: white;
     p{
         font-family: 'Roboto', sans-serif;
         font-size: 28px;

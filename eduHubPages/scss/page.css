@@ -31,23 +31,52 @@ table td {
   background: #822C2B;
   height: 60px;
   display: grid;
-  grid-template-columns: auto 150px;
-  grid-gap: 40px;
+  grid-template-columns: repeat(3, auto);
   justify-content: end;
   align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 40;
 }
 .nav a {
   color: white;
+  background: #822C2B;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
+  padding: 0 20px;
   font-size: 30px;
   font-family: "Roboto", sans-serif;
 }
-.nav a:nth-child(2) {
-  color: lightgrey;
+.nav a:nth-child(3) {
+  background: white;
+  color: #822C2B;
+  padding: 0 20px;
 }
-.nav a:nth-child(1):hover {
+.nav a:nth-child(1) {
   color: lightgrey;
-  transition: 0.5s;
+  background: white;
+  color: #822C2B;
+  transition: 0.3s;
+}
+.nav a:nth-child(2):hover {
+  color: lightgrey;
+  background: white;
+  color: #822C2B;
+  transition: 0.3s;
+}
+
+.page1_table__with_img {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.table_img {
+  margin: 0 auto;
 }
 
 footer {

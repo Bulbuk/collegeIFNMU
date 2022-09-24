@@ -28,25 +28,53 @@ table{
     background: #822C2B;
     height: 60px;
     display: grid;
-    grid-template-columns: auto 150px;
-    grid-gap: 40px;
+    grid-template-columns: repeat(3, auto);
     justify-content: end;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 40;
     a{
         color: white;
+        background: #822C2B;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-decoration: none;
+        padding: 0 20px;
         font-size: 30px;
         font-family: 'Roboto', sans-serif;
-        &:nth-child(2){
-            color: lightgrey;
+        &:nth-child(3){
+            background: white;
+            color: #822C2B;
+            padding: 0 20px;
         }
         &:nth-child(1){
+                color: lightgrey;
+                background: white;
+                color: #822C2B;
+                transition: 0.3s;  
+        } 
+        &:nth-child(2){
             &:hover{
                 color: lightgrey;
-                transition: 0.5s; 
+                background: white;
+                color: #822C2B;
+                transition: 0.3s; 
             }
         }
     }
+}
+.page1_table__with_img{
+    display: grid;
+    grid-gap: 10px;
+
+}
+.table_img{
+    margin: 0 auto;
+    
 }
 footer{
     display: grid;

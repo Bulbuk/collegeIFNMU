@@ -62,6 +62,7 @@ body {
   display: grid;
   grid-template-rows: repeat(3, 50px);
 }
+
 .edu_nav__element {
   text-align: left;
   background: white;
@@ -462,31 +463,31 @@ footer {
     padding: 0 0;
     width: 100%;
   }
-  .burger_menu {
-    display: grid;
-  }
-  .nav {
-    display: grid;
-    min-height: 700px;
-    width: 100%;
-    grid-template-columns: 1fr;
-    justify-content: start;
-    grid-template-rows: 120px 140px;
-    opacity: 0.8;
-  }
-  .nav a {
-    height: 100px;
-    border: 1px solid white;
-    background: white;
-    color: black;
-  }
-  .nav a:nth-child(2) {
-    grid-row: 1/2;
-  }
+  /*.burger_menu{
+      display: grid;
+  }*/
+  /*.nav{
+      display: grid;
+      min-height: 700px;
+      width: 100%;
+      grid-template-columns: 1fr;
+      justify-content: start;
+      grid-template-rows: 120px 140px;
+      opacity: 0.8;
+      a{
+          height: 100px;
+          border: 1px solid white;
+          background: white;
+          color: black;
+          &:nth-child(2){
+              grid-row: 1/2;
+          }
+      }
+  }*/
   header {
     grid-gap: 20px;
     grid-template-columns: 1fr;
-    padding: 0 0;
+    padding: 0 10px;
   }
   header img {
     margin: 0 auto;
@@ -525,7 +526,6 @@ footer {
     width: 90%;
     grid-gap: 0;
     grid-row-gap: 20px;
-    width: 300px;
   }
   .edu_hub_slogans div {
     grid-column: 1/3;

@@ -9,6 +9,7 @@ body{
     display: grid;
     justify-content: center;
     grid-gap: 10px;
+    font-family: 'Roboto', sans-serif;
     p{
         margin: 0 0;
         padding: 0 0;
@@ -23,6 +24,12 @@ body{
 table{
     background: black;
     margin: 20px 0 0 0;
+    tr{
+        &:nth-child(1){
+            background: #000;
+            font-weight: bold;
+        }
+    }
     td{
         background: white;
         padding: 10px;

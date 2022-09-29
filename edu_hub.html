@@ -13,14 +13,26 @@
 </head>
 <body>
     <div class="container">
-        <div class="nav">
-            <a href="#">Education hub</a>
-            <a href="index.html">Головна</a>
+        <div class="burger_menu">
+            <img id="burgerMenu" width="40px" src="img/Vector (1).png" alt="">
+        </div>
+        
+        <div id="navigation" class="nav">  
+            <!--<a href="#">Підтримка</a>-->
+            <div class="edu_nav">
+                <a href="edu_hub.html">Education hub</a>
+                <!--<div class="edu_nav_links">
+                    <a class="edu_nav__element" href="#">Медсестринство</a>
+                    <a class="edu_nav__element" href="#">Зуботехнічна справа</a>
+                    <a class="edu_nav__element" href="#">Фармація</a>
+                </div>-->
+            </div>
+            <a href="#">Головна</a>
         </div>
        <div class="wrapper">
         <div class="authors"></div>
         <div class="eduHub">
-            <div class="eduHub_block">
+            <div name="eduBlock" class="eduHub_block">
                 <div class="eduHub_block_banner_krok">
                     <img src="img/krokM.gif" alt="">
                     <p>Підготовка до Кроку М</p>
@@ -51,11 +63,11 @@
             </div>
             <div class="eduHub_block">
                 <div class="eduHub_block_banner">
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Забір крові з вени на біохімію</p>
                 </div>
                 <div class="eduHub_info">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#"><button>lets go</button></a>
+                    <p>Забір венозної крові лабораторного дослідження</p>
+                    <a href="eduHubPages/page3.html"><button>Прейти</button></a>
                 </div>
             </div>
             <div class="eduHub_block">
@@ -121,5 +133,6 @@
     </footer>
 
     </div>
+    <script src="js/edu_hub.js"></script>
 </body>
 </html>

@@ -86,6 +86,50 @@ body {
   display: none;
 }
 
+.authors {
+  color: black;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  grid-gap: 20px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 40px 0;
+}
+.authors img {
+  height: 400px;
+}
+.authors h2 {
+  font-size: 30px;
+  border-bottom: 3px solid #000;
+  padding: 10px 0;
+}
+.authors p {
+  text-indent: 20px;
+  font-size: 18px;
+}
+
+.authors_info {
+  display: grid;
+}
+.authors_info a {
+  display: flex;
+  text-decoration: none;
+  color: #822C2B;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border: 2px solid #822C2B;
+  border-radius: 10px;
+  transition: 0.5s;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+.authors_info a:hover {
+  color: white;
+  background: #822C2B;
+  transition: 0.5s;
+}
+
 .eduHub {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -216,6 +260,9 @@ footer {
   .wrapper {
     width: 700px;
   }
+  .authors {
+    grid-template-columns: 1fr;
+  }
   .eduHub {
     width: 700px;
     margin: 0 auto;
@@ -246,6 +293,9 @@ footer {
 @media (min-width: 500px) and (max-width: 720px) {
   .wrapper {
     width: 400px;
+  }
+  .authors {
+    grid-template-columns: 1fr;
   }
   .burger_menu {
     top: 0;
@@ -307,6 +357,12 @@ footer {
   .wrapper {
     width: 250px;
   }
+  .authors {
+    grid-template-columns: 1fr;
+  }
+  .authors img {
+    height: 200px;
+  }
   .burger_menu {
     top: 0;
     left: 0;
@@ -336,11 +392,16 @@ footer {
     top: 60px;
     transition: 1s;
   }
+  .eduHub_block {
+    height: 370px;
+    margin: 0 0 0 0;
+  }
   .eduHub {
     grid-template-columns: 1fr;
     width: 250px;
     justify-content: center;
     align-items: center;
+    grid-gap: 40px;
   }
   footer {
     grid-template-columns: 1fr;
